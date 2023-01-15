@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+SetEnv HTTP_PHP_MAILER_HOST "mail.therootsrestaurant.ug"
+SetEnv HTTP_PHP_MAILER_PORT 465
+SetEnv HTTP_PHP_MAILER_USERNAME mail@therootsrestaurant.ug
+SetEnv HTTP_PHP_MAILER_PASSWORD "theroots@2023#"
