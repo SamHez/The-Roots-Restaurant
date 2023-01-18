@@ -1,88 +1,141 @@
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
 
-// Configure JSON response
-$response = [
-    'top_err' => '',
-    'top_success' => '',
-    'name_err' => '',
-    'email_err' => '',
-    'tel_err' => '',
-    'message_err' => ''
-];
-try{
-    $mail = new PHPMailer();
-    $mail->isSMTP();                                          
-    $mail->Host       = $_SERVER['HTTP_PHP_MAILER_HOST'];                   
-    $mail->SMTPAuth   = true; 
-    $mail->Port   = $_SERVER['HTTP_PHP_MAILER_HOST'];                                 
-    $mail->Username   = $_SERVER['HTTP_PHP_MAILER_USERNAME'];                    
-    $mail->Password   = $_SERVER['HTTP_PHP_MAILER_PASSWORD'];  
-}catch(Exception $e){
+require 'vendor/autoload.php';
 
-    $response['top_err'] = 'Sorry. There was a problem sending your message';
-    exit(json_encode($response));
+if(isset($_POST)){
 
-}                       
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $tel = $_POST["tel"];
+    $message = $_POST["message"];
 
-    $contentType = isset($_SERVER['CONTENT_TYPE']) ? trim($_SERVER['CONTENT_TYPE']) :
-    '';
+    //Create an instance; passing `true` enables exceptions
+    $mail = new PHPMailer(true);
+
+    try {
+        //Server settings
+        $mail->isSMTP();                                            
+        $mail->Host       = 'mail.therootsrestaurant.ug';                     
+        $mail->SMTPAuth   = true;                                   
+        $mail->Username   = 'mail@therootsrestaurant.ug';                    
+        $mail->Password   = 'theroots@2023#';                             
+        $mail->SMTPSecure = 'ssl';            
+        $mail->Port       = 465;                                    
+
+        //Recipients
+        $mail->setFrom('mail@therootsrestaurant.ug', 'Roots Website');
+        $mail->addAddress('samuelepodoi@gmail.com');    
+        $mail->addAddress('mail@therootsrestaurant.ug'); 
+        $mail->addReplyTo($email);
+        
+        $body = '
+
+        <!-- © 2023 The Roots Restaurant -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout:fixed;background-color:#f9f9f9" id="bodyTable">
+	<tbody>
+		<tr>
+			<td style="padding-right:10px;padding-left:10px;" align="center" valign="top" id="bodyCell">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%" class="wrapperWebview" style="max-width:600px">
+					<tbody>
+						<tr>
+							<td align="center" valign="top">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tbody>
+										<tr>
+											<td style="padding-top: 20px; padding-bottom: 20px; padding-right: 0px;" align="right" valign="middle" class="webview"> <a href="https://therootsrestaurant.ug/" style="color:#bbb;font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;font-style:normal;letter-spacing:normal;line-height:20px;text-transform:none;text-align:right;text-decoration:underline;padding:0;margin:0" target="_blank" class="text hideOnMobile">The Roots Restaurant Website →</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table border="0" cellpadding="0" cellspacing="0" width="100%" class="wrapperBody" style="max-width:600px">
+					<tbody>
+						<tr>
+							<td align="center" valign="top">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="tableCard" style="background-color:#fff;border-color:#e5e5e5;border-style:solid;border-width:0 1px 1px 1px;">
+									<tbody>
+										<tr>
+											<td style="background-color:#d3a971;font-size:1px;line-height:3px" class="topBorder" height="3">&nbsp;</td>
+										</tr>
+										<tr>
+											<td style="padding-top: 60px; padding-bottom: 20px;" align="center" valign="middle" class="emailLogo">
+												<a href="#" style="text-decoration:none" target="_blank">
+													<img alt="" border="0" src="https://therootsrestaurant.ug/static/images/logo/footer-logo.png" style="width:100%;max-width:150px;height:auto;display:block" width="150">
+												</a>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding-bottom: 5px; padding-left: 20px; padding-right: 20px;" align="center" valign="top" class="mainTitle">
+												<h2 class="text" style="color:#000;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:28px;font-weight:500;font-style:normal;letter-spacing:normal;line-height:36px;text-transform:none;text-align:center;padding:0;margin:0">Message from '. $name .'</h2>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding-bottom: 30px; padding-left: 20px; padding-right: 20px;" align="center" valign="top" class="subTitle">
+												<h4 class="text" style="color:#999;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;font-style:normal;letter-spacing:normal;line-height:24px;text-transform:none;text-align:center;padding:0;margin:0">'. $email .'</h4>
+                                                <h4 class="text" style="color:#999;font-family:Poppins,Helvetica,Arial,sans-serif;font-size:16px;font-weight:500;font-style:normal;letter-spacing:normal;line-height:24px;text-transform:none;text-align:center;padding:0;margin:0">'. $tel .'</h4>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding-left:20px;padding-right:20px" align="center" valign="top" class="containtTable ui-sortable">
+												<table border="0" cellpadding="0" cellspacing="0" width="100%" class="tableDescription" style="">
+													<tbody>
+														<tr>
+															<td style="padding-bottom: 20px;" align="center" valign="top" class="description">
+																<p class="text" style="color:#666;font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;font-style:normal;letter-spacing:normal;line-height:22px;text-transform:none;text-align:center;padding:0;margin:0">'. $message .'</p>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												
+											</td>
+										</tr>
+										<tr>
+											<td style="font-size:1px;line-height:1px" height="20">&nbsp;</td>
+										</tr>
+										
+									</tbody>
+								</table>
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="space">
+									<tbody>
+										<tr>
+											<td style="font-size:1px;line-height:1px" height="200">&nbsp;</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+        
+        
+        ';
+        
 
 
-    if ($contentType == 'application/json') {
-        $content = trim(file_get_contents(('php://input')));
-        //Convert Content into PHP Array
-        $decoded = json_decode($content, true);
-        if(is_array($decoded)){
-            //Sanitize Input Data
-            foreach($decoded as $name => $value){
-                $decoded[$name] = trim(filter_var($value, FILTER_SANITIZE_STRING));
-            }
-            //Error Checking
-            if(empty($decoded['name'])){
-                $response['name_err'] = 'Error. This input cannot be empty';
-            }else if(!filter_var($decoded['email'], FILTER_VALIDATE_EMAIL)){
-                $response['email_err'] = 'Error. Input must be a valid email';
-            }
-            if(empty($decoded['tel'])){
-                $response['tel_err'] = 'Error. This input cannot be empty';
-            }
-            if(empty($decoded['message'])){
-                $response['message_err'] = 'Error. This input cannot be empty';
-            }
-            //Can't send the email if we already have a response to show
-            foreach($response as $type => $message){
-                if(!empty($response[$type])){
-                    exit(json_encode($response));
-                }
-            }
-            //ACTUALLY SEND EMAIL
-            try{
-                $mail->setFrom('mail@therootsrestaurant.ug');
-                $mail->Subject = "New Message from Roots Website";
-                $mail->isHTML(true);
-                $mail->Body = '<p>'.$decoded['message'].'</p>';
-                $mail->addAddress($decoded['email']);
+        //Content
+        $mail->isHTML(true);                                  
+        $mail->Subject = 'New Message from ' . $name;
+        $mail->Body    = $body;
+        $mail->AltBody = $body;
 
-                $mail->send();
-            }catch(Exception $e){
-                $response['top_err'] = 'Sorry. There was a problem sending your message';
-                exit(json_encode($response));
-            }
-            //Success Response
-            $response['top_success'] = 'Success. Your message has been submitted, we shall be in touch shortly!';
-            exit(json_encode($response));
-
-        }
+        $mail->send();
+        header("location: ../contact?status=success");
+    } catch (Exception $e) {
+        //echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        header("location: ../contact?status=error");
     }
 
-$response['top_err'] = 'Sorry. There was a problem sending your message';
-exit(json_encode($response));
 
-?>
+}

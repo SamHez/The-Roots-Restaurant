@@ -25,11 +25,10 @@
               <li class="nav__item "><a href="gallery" class="nav__item-link <?php if($curPageName == "gallery.php"){ echo "active";} ?>">Gallery</a></li>
 
               <li class="nav__item with-dropdown">
-                <a href="services" data-toggle="dropdown" class="dropdown-toggle nav__item-link <?php if($curPageName == "services.php"){ echo "active";}elseif($curPageName == "about.php"){echo "active";}elseif($curPageName == "events.php"){echo "active";} ?> ?>">Services <img src="static/images/icons/arrow-drop-down.svg" style="color: white;" alt=""></a>
+                <a href="services" data-toggle="dropdown" class="dropdown-toggle nav__item-link <?php if($curPageName == "services.php"){ echo "active";}elseif($curPageName == "about.php"){echo "active";} ?> ?>">Services <img src="static/images/icons/arrow-drop-down.svg" style="color: white;" alt=""></a>
                 <ul class="dropdown-menu">
                   <li class="nav__item"><a href="services" class="nav__item-link ">Our Services</a></li>
                   <li class="nav__item"><a href="about" class="nav__item-link ">About Us</a></li>
-                  <li class="nav__item"><a href="events" class="nav__item-link ">Events</a></li>
                 </ul><!-- /.dropdown-menu -->
               </li>
 

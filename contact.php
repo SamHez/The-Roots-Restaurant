@@ -129,7 +129,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <!-- CONTACT FORM -->
           <div class="col-sm-12 col-md-12 col-lg-6">
-            <form class="contact-form" >
+            <!-- Display Alert Messages -->
+            <?php 
+            if(isset($_GET['status'])){
+              $status = $_GET['status'];
+              if($status == "success"){
+                echo '<div class="alert alert-success" role="alert">Your message has been sent successfully, we shall be in touch shortly!</div>';
+              }elseif($status == "error"){
+                echo '<div class="alert alert-danger" role="alert">Failed to send message, Please try again. </div>';
+              }
+            }
+            ?>
+
+            <form class="contact-form" action="system/mail.php" method="POST">
 
 
               <div class="row">
@@ -143,7 +155,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <div class="form-group"><input name="email" type="email" class="form-control" placeholder="Email:" required></div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-6">
-                  <div class="form-group"><input name="tel" textype="number" class="form-control" placeholder="Phone:" required></div>
+                  <div class="form-group"><input name="tel" type="number" class="form-control" placeholder="Phone:" required></div>
                 </div>
               </div>
 
@@ -155,19 +167,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                  <button class="btn btn__secondary btn__block" type="submit">Send Message</button>
+                  <button class="btn btn__secondary btn__block" type="submit" id="btn-submit">Send Message</button>
+                  <button class="btn btn__secondary btn__block" type="button" hidden id="load" style="cursor: not-allowed;">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Sending Message...
+                  </button>
                 </div>
               </div>
 
-              <!-- Status Notification -->
-              <p class="please-wait"></p>
-			        <p class="error"></p>
-			        <p class="success"></p>
 
             </form>
           </div>
           <!-- CONTACT FORM -->
-
 
 
         </div>
@@ -202,5 +213,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <script src="system/mail-contact.js"></script>
 
+
     <!-- Include Footer -->
     <?php include_once( "footer.php"); ?>
+
+    
