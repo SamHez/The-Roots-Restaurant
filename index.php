@@ -550,67 +550,83 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
 
             <!-- Start Reservation Form -->
-            <form class="reservation__form" data-aos="fade-left">
+            <form class="reservation__form" action="system/reserve-index.php" method="POST" data-aos="fade-left">
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-12">
                     <span class="heading__subtitle">Reserve your table</span>
                     <p>Reserve for your meal or upcoming event</p>
+                    <!-- Display Alert Messages -->
+                    <?php 
+                    if(isset($_GET['status'])){
+                      $status = $_GET['status'];
+                      if($status == "success"){
+                        echo '<div class="alert alert-success" role="alert">Your reservation has been sent successfully, we shall be in touch shortly!</div>';
+                      }elseif($status == "error"){
+                        echo '<div class="alert alert-danger" role="alert">Failed to make reservation, Please try again. </div>';
+                      }
+                    }
+                    ?>
+                    <!-- Display Alert Messages -->
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Your Name">
+                      <input name="name" type="text" class="form-control" placeholder="Your Name" required>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Phone Number">
+                      <input name="tel" type="text" class="form-control" placeholder="Phone Number" required>
                     </div>
                   </div>
 
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Email">
+                      <input name="email" type="text" class="form-control" placeholder="Email" required>
                     </div>
                   </div>
 
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="number" class="form-control" placeholder="Number of Guests">
+                      <input name="guests_no" type="number" class="form-control" placeholder="Number of Guests" required>
                     </div>
                   </div>
 
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label>Time</label>
-                      <input type="time" class="form-control" placeholder="">
+                      <input name="time" type="time" class="form-control" placeholder="" required>
                     </div>
                   </div>
 
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label>Date</label>
-                      <input type="date" class="form-control" placeholder="">
+                      <input name="date" type="date" class="form-control" placeholder="" required>
                     </div>
                   </div>
 
                   <div class="col-sm-12">
                     <div class="form-group">
-                      <select class="form-control">
-                        <option value="">Select Occasion</option>
-                        <option value="">Breakfast</option>
-                        <option value="">Lunch</option>
-                        <option value="">Dinner</option>
-                        <option value="">Meeting</option>
-                        <option value="">Garden Wedding</option>
-                        <option value="">Bridal/Baby Shower</option>
-                        <option value="">Office Retreat</option>
+                      <h6>Select Occasion</h6>
+                      <select name="occasion" class="form-control" required>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
+                        <option value="Meeting">Meeting</option>
+                        <option value="Wedding">Garden Wedding</option>
+                        <option value="Bridal/Baby Shower">Bridal/Baby Shower</option>
+                        <option value="Office Retreat">Office Retreat</option>
                       </select>
                     </div>
                   </div>
                   
                   
                   <div class="col-sm-12 col-md-12 col-lg-12">
-                    <button type="" class="btn btn__secondary btn__block">Submit Reservation</button>
+                    <button type="submit" class="btn btn__secondary btn__block">Submit Reservation</button>
+                    <!--<button class="btn btn__secondary btn__block" type="button" disabled id="load" style="cursor: not-allowed;">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Submitting...
+                    </button>-->
                   </div>
                 </div>
               </form>
@@ -621,98 +637,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
     </section>
-
-    <!-- ======================
-      Blog Grid
-    ========================= -->
-    <!--<section class="blog blog-grid pb-60">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading heading-latout1 text-center mb-50">
-              <span class="heading__subtitle">Don’t Miss</span>
-              <h2 class="heading__title">Our News & Events</h2>
-              <div class="heading__icon">
-                <img src="static/images/shapes/shape2.png" alt="heading img">
-              </div>
-              <p class="heading__desc">Since our grand opening in May 1995, El Royale has won great awards from food
-                critics and organizations all over the world.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          
-
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="#">
-                  <img src="static/images/blog/grid/1.jpg" alt="post image">
-                </a>
-              </div>
-              <div class="post__content">
-                <div class="post__meta">
-                  <div class="post__meta-cat">
-                    <a href="#">Food</a><a href="#">Recipe</a>
-                  </div>
-                </div>
-                <h4 class="post__title"><a href="#">Healthy & Simple Recipes That Are Perfect for Spring</a></h4>
-                <span class="post__meta-date">Jan 20, 2020</span>
-                <p class="post__desc">My favorite form of cold weather exercise is snow-shoeing, but by chance I haven’t
-                  been able to go this year. Busy working at the computer when fresh snow fell...</p>
-                <a href="#" class="btn btn__secondary btn__link">Read More</a>
-              </div>
-            </div>
-          </div>
-          
-
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="#">
-                  <img src="static/images/blog/grid/2.jpg" alt="post image">
-                </a>
-              </div>
-              <div class="post__content">
-                <div class="post__meta">
-                  <div class="post__meta-cat">
-                    <a href="#">Chef</a><a href="#">Dinner</a>
-                  </div>
-                </div>
-                <h4 class="post__title"><a href="#">What do chefs cook when they have friends over for dinner?</a></h4>
-                <span class="post__meta-date">Jan 20, 2020</span>
-                <p class="post__desc">I began my career as a recipe tester for cookbooks, and I did that work for years.
-                  We loved cookbooks and loved browsing for them at thrift stores...</p>
-                <a href="#" class="btn btn__secondary btn__link">Read More</a>
-              </div>
-            </div>
-          </div>
-          
-
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="post-item">
-              <div class="post__img">
-                <a href="#">
-                  <img src="static/images/blog/grid/3.jpg" alt="post image">
-                </a>
-              </div>
-              <div class="post__content">
-                <div class="post__meta">
-                  <div class="post__meta-cat">
-                    <a href="#">Chef</a><a href="#">Dinner</a>
-                  </div>
-                </div>
-                <h4 class="post__title"><a href="#">Desserts With Cream Cheese Frosting Taste of Home</a></h4>
-                <span class="post__meta-date">Jan 17, 2020</span>
-                <p class="post__desc">I’ve been baking cake for many years, and have experimented with making it into
-                  cupcakes, as a layer cake, serving it dusted with confectioner’s sugar...</p>
-                <a href="#" class="btn btn__secondary btn__link">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>-->
 
 
 <!-- Include Footer -->

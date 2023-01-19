@@ -92,68 +92,84 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
 
               <!-- Start Reservation Form -->
-              <form class="reservation__form" data-aos="fade-left">
+              <form class="reservation__form" action="system/reserve.php" method="POST" data-aos="fade-left">
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-12">
                     <p>Whether you are planning on having an intimate Garden Wedding, a Rehearsal Dinner, Birthday Party, 
                       a Bridal or Baby shower, a Baptism, a Corporate Event, an Office Retreat or Wedding Meeting, 
                       we look forward to making your party the most memorable and enjoyable experience! </p><br>
                   </div>
+                  <!-- Display Alert Messages -->
+                  <?php 
+                  if(isset($_GET['status'])){
+                    $status = $_GET['status'];
+                    if($status == "success"){
+                      echo '<div class="alert alert-success" role="alert">Your reservation has been sent successfully, we shall be in touch shortly!</div>';
+                    }elseif($status == "error"){
+                      echo '<div class="alert alert-danger" role="alert">Failed to make reservation, Please try again. </div>';
+                    }
+                  }
+                  ?>
+                  <!-- Display Alert Messages -->
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Your Name">
+                      <input name="name" type="text" class="form-control" placeholder="Your Name" required>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Phone Number">
+                      <input name="tel" type="text" class="form-control" placeholder="Phone Number" required>
                     </div>
                   </div>
 
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Email">
+                      <input name="email" type="text" class="form-control" placeholder="Email" required>
                     </div>
                   </div>
 
                   <div class="col-sm-6">
                     <div class="form-group">
-                      <input type="number" class="form-control" placeholder="Number of Guests">
+                      <input name="guests_no" type="number" class="form-control" placeholder="Number of Guests" required>
                     </div>
                   </div>
 
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label>Time</label>
-                      <input type="time" class="form-control" placeholder="">
+                      <input name="time" type="time" class="form-control" placeholder="" required>
                     </div>
                   </div>
 
                   <div class="col-sm-6">
                     <div class="form-group">
                       <label>Date</label>
-                      <input type="date" class="form-control" placeholder="">
+                      <input name="date" type="date" class="form-control" placeholder="" required>
                     </div>
                   </div>
 
                   <div class="col-sm-12">
                     <div class="form-group">
-                      <select class="form-control">
-                        <option value="">Select Occasion</option>
-                        <option value="">Breakfast</option>
-                        <option value="">Lunch</option>
-                        <option value="">Dinner</option>
-                        <option value="">Meeting</option>
-                        <option value="">Garden Wedding</option>
-                        <option value="">Bridal/Baby Shower</option>
-                        <option value="">Office Retreat</option>
+                      <h6>Select Occasion</h6>
+                      <select name="occasion" class="form-control" required>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
+                        <option value="Meeting">Meeting</option>
+                        <option value="Wedding">Garden Wedding</option>
+                        <option value="Bridal/Baby Shower">Bridal/Baby Shower</option>
+                        <option value="Office Retreat">Office Retreat</option>
                       </select>
                     </div>
                   </div>
                   
                   
                   <div class="col-sm-12 col-md-12 col-lg-12">
-                    <button type="" class="btn btn__secondary btn__block">Submit Reservation</button>
+                    <button type="submit" class="btn btn__secondary btn__block">Submit Reservation</button>
+                    <!--<button class="btn btn__secondary btn__block" type="button" disabled id="load" style="cursor: not-allowed;">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Submitting...
+                    </button>-->
                   </div>
                 </div>
               </form>
