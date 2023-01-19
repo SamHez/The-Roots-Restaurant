@@ -550,7 +550,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
 
             <!-- Start Reservation Form -->
-            <form class="reservation__form" action="system/reserve-index.php" method="POST" data-aos="fade-left" id="res-form">
+            <form class="reservation__form" action="system/reserve-index.php" method="POST" data-aos="fade-left" id="resform">
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-12">
                     <span class="heading__subtitle">Reserve your table</span>
@@ -623,8 +623,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   
                   <div class="col-sm-12 col-md-12 col-lg-12">
                     <button type="submit" class="btn btn__secondary btn__block" id="btn-submit">Submit Reservation</button>
-                    <button class="btn btn__secondary btn__block" type="button" disabled id="load" style="cursor: not-allowed;">
-                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" id="loader"></span>
+                    <button class="btn btn__secondary btn__block" type="button" id="loader" style="cursor: not-allowed;">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" disabled></span>
                     Submitting...
                     </button>
                   </div>
@@ -636,7 +636,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               $(document).ready(function () 
                 {
                     $("#loader").hide();
-                    $("#res-form").submit(function (e) {
+                    $("#resform").submit(function (e) {
               
                         $("#btn-submit").hide();
                         $("#loader").show();
