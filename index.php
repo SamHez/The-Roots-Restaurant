@@ -550,7 +550,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
 
             <!-- Start Reservation Form -->
-            <form class="reservation__form" action="system/reserve-index.php" method="POST" data-aos="fade-left">
+            <form class="reservation__form" action="system/reserve-index.php" method="POST" data-aos="fade-left" id="res-form">
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-12">
                     <span class="heading__subtitle">Reserve your table</span>
@@ -622,14 +622,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   
                   
                   <div class="col-sm-12 col-md-12 col-lg-12">
-                    <button type="submit" class="btn btn__secondary btn__block">Submit Reservation</button>
-                    <!--<button class="btn btn__secondary btn__block" type="button" disabled id="load" style="cursor: not-allowed;">
-                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <button type="submit" class="btn btn__secondary btn__block" id="btn-submit">Submit Reservation</button>
+                    <button class="btn btn__secondary btn__block" type="button" disabled id="load" style="cursor: not-allowed;">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" id="loader"></span>
                     Submitting...
-                    </button>-->
+                    </button>
                   </div>
                 </div>
               </form>
+
+              <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+              <script type="text/javascript">
+              $(document).ready(function () 
+                {
+                    $("#loader").hide();
+                    $("#res-form").submit(function (e) {
+              
+                        $("#btn-submit").hide();
+                        $("#loader").show();
+              
+                        return true;
+                
+                    });
+                });  
+              </script>
 
             
             </div>

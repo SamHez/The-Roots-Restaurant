@@ -141,7 +141,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
             ?>
 
-            <form class="contact-form" action="system/mail.php" method="POST">
+            <form class="contact-form" action="system/mail.php" method="POST" id="contactform">
 
 
               <div class="row">
@@ -168,8 +168,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
                   <button class="btn btn__secondary btn__block" type="submit" id="btn-submit">Send Message</button>
-                  <button class="btn btn__secondary btn__block" type="button" hidden id="load" style="cursor: not-allowed;">
-                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  <button class="btn btn__secondary btn__block" type="button" id="loader" style="cursor: not-allowed;">
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" disabled></span>
                     Sending Message...
                   </button>
                 </div>
@@ -179,6 +179,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </form>
           </div>
           <!-- CONTACT FORM -->
+          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+          <script type="text/javascript">
+              $(document).ready(function () 
+              {
+                  $("#loader").hide();
+                  $("#contactform").submit(function (e) {
+            
+                      $("#btn-submit").hide();
+                      $("#loader").show();
+            
+                      return true;
+              
+                  });
+              });  
+          </script>
 
 
         </div>
@@ -210,8 +226,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
       </div>
     </section>-->
-
-    <script src="system/mail-contact.js"></script>
 
 
     <!-- Include Footer -->
