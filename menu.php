@@ -75,7 +75,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
 
     <!-- ========================
-        Menu layout 1
+        FEATURED DISHES
     =========================== -->
     <section class="menu-layout1 pt-120 pb-80">
       <div class="container">
@@ -99,7 +99,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <li class="fb"><a href="#breakfast" class="btn btn__primary">Breakfast</a></li>
               <li class="fb"><a href="#soups" class="btn btn__primary">Soups</a></li>
               <li class="fb"><a href="#mains" class="btn btn__primary">Mains</a></li>
-              <li class="fb"><a href="#drinks" class="btn btn__primary">Drinks</a></li>
+              <li class="fb"><a href="#continental" class="btn btn__primary">Continental Dishes</a></li>
+              <li class="fb"><a href="#others" class="btn btn__primary">Others / Salads</a></li>
             </ul>
             </div>
         </div>
@@ -107,68 +108,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
         <!-- ========================
-        Menu layout 2
-    =========================== -->
-    <div class="menu-layout2 pb-60">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="menu-wrapper">
-              <div class="menu-item">
-                <div class="menu__item-img"><img src="static/images/menu/1.jpg" alt="menu img"></div>
-                <div class="menu__item-content">
-                  <h4 class="menu__item-title">GOAT LUWOMBO</h4>
-                  <p class="menu__item-desc">Steamed in banana leaf with onion, tomato and salt</p>
-                  <span class="menu__item-price">30,000 Ugx</span>
+          FEATURED DISHES
+        =========================== -->
+        <div class="menu-layout2 pb-60">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="menu-wrapper">
+                  <div class="menu-item">
+                    <!--<div class="menu__item-img"><img src="static/images/menu/1.jpg" alt="menu img"></div>-->
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">GOAT LUWOMBO</h4>
+                      <p class="menu__item-desc">Steamed in banana leaf with onion, tomato and salt</p>
+                      <span class="menu__item-price">30,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">GOAT STEW</h4>
+                      <span class="pricing__tag">Recommended</span>
+                      <p class="menu__item-desc">Delicately stewed with onion, tomato and salt</p>
+                      <span class="menu__item-price">30,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">ROAST GOAT</h4>
+                      <p class="menu__item-desc">Tender, carefully char-grilled goat's meat, served with a roast Tooke and Kachumbari</p>
+                      <span class="menu__item-price">25,000 Ugx</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="menu-item">
-                <div class="menu__item-content">
-                  <h4 class="menu__item-title">CHICKEN ROAST</h4>
-                  <span class="pricing__tag">Recommended</span>
-                  <p class="menu__item-desc">Charcoal grilled and served with kachumbari (Tomato & Onion Salad) and a roast matooke</p>
-                  <span class="menu__item-price">25,000 Ugx</span>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="menu-wrapper">
+                <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">CHICKEN LUWOMBO</h4>
+                      <p class="menu__item-desc">Local free-range chicken slightly char-grilled and steamed in banana leaf with onion, tomato & salt</p>
+                      <span class="menu__item-price">29,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">CHICKEN STEW</h4>
+                      <p class="menu__item-desc">Local free-range chicken stewed to perfection with tomato & onion</p>
+                      <span class="menu__item-price">28,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">CHICKEN ROAST</h4>
+                      <p class="menu__item-desc">Charcoal grilled and served with kachumbari (Tomato & Onion Salad) and a roast matooke</p>
+                      <span class="menu__item-price">25,000 Ugx</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="menu-item">
-                <div class="menu__item-content">
-                  <h4 class="menu__item-title">Katogo Combo</h4>
-                  <p class="menu__item-desc">Beef, groundnut, goat or chicken options served with a cup of tea or coffee, juice or fruit</p>
-                  <span class="menu__item-price">18,000 Ugx</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="menu-wrapper">
-            <div class="menu-item">
-                <div class="menu__item-img"><img src="static/images/menu/2.jpg" alt="menu img"></div>
-                <div class="menu__item-content">
-                  <h4 class="menu__item-title">BEEF LUWOMBO</h4>
-                  <p class="menu__item-desc">Slightly char-grilled, then steamed to perfection in a banana leaf with onion & Tomato</p>
-                  <span class="menu__item-price">28,000 Ugx</span>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu__item-content">
-                  <h4 class="menu__item-title">English Breakfast</h4>
-                  <p class="menu__item-desc">Sausage, egg(of your choice), toast, baked beans, tomato & cup of tea or fresh juice of the day</p>
-                  <span class="menu__item-price">27,000 Ugx</span>
-                </div>
-              </div>
-              <div class="menu-item">
-                <div class="menu__item-img"><img src="static/images/menu/3.jpg" alt="menu img"></div>
-                <div class="menu__item-content">
-                  <h4 class="menu__item-title">CHICKEN STEW</h4>
-                  <p class="menu__item-desc">Local free-range chicken stewed to perfection with tomato & onion</p>
-                  <span class="menu__item-price">28,000 Ugx</span>
-                </div>
-              </div>
+
+
             </div>
           </div>
         </div>
-      </div>
-  </div>
         
       </div>
     </section>
@@ -245,8 +246,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </section>
 
 
+
+
      <!-- ========================
-       text Banner layout2
+       SOUPS MENU
     =========================== -->
     <section class="text-banner text-banner-layout2 text-center bg-overlay bg-overlay-gradient bg-parallax" id="soups">
       <div class="bg-img"><img src="static/images/backgrounds/20.jpg" alt="background"></div>
@@ -259,10 +262,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       </div>
-    </section><!-- /.textBanner layout1 -->
+    </section>
 
     <!-- ========================
-        Menu layout 
+        SOUPS MENU
     =========================== -->
     <section class="menu-layout1 pb-80">
       <div class="container">
@@ -273,7 +276,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div class="menu-item">
               <h4 class="menu__item-title">Cream of Tomato</h4>
               <span class="menu__item-price">20,000 Ugx</span>
-              <p class="menu__item-desc">PFarm fresh tomato cooked with vegetable stock and cream for your nourishment </p>
+              <p class="menu__item-desc">Farm fresh tomato cooked with vegetable stock and cream for your nourishment </p>
             </div>
             <div class="menu-item">
               <h4 class="menu__item-title">Clear Mushroom</h4>
@@ -322,138 +325,388 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
         </div>
       </div>
-    </section><!-- /.textBanner -->
+    </section>
 
     <!-- ========================
         MAIN  DISHES
     =========================== -->
-    <section class="menu-layout1 pb-60">
+
+    <section class="menu-layout1 pt-120 pb-80">
       <div class="container">
-      <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-4">
-            <img src="static/images/menu/1.jpg" alt="menu" class="mb-40">
-            <div class="menu-item">
-              <h4 class="menu__item-title">GOAT LUWOMBO</h4>
-              <span class="menu__item-price">30,000 Ugx</span>
-              <p class="menu__item-desc">Steamed in banana leaf with onion, tomato and salt </p>
-            </div>
-            <div class="menu-item">
-              <h4 class="menu__item-title">GOAT STEW</h4>
-              <span class="menu__item-price">30,000 Ugx</span>
-              <p class="menu__item-desc">Delicately stewed with onion, tomato and salt </p>
-            </div>
-            <div class="menu-item">
-              <h4 class="menu__item-title">ROAST GOAT</h4>
-              <span class="menu__item-price">25,000 Ugx</span>
-              <p class="menu__item-desc">Tender, carefully char-grilled goat's meat, served with a roast Tooke and Kachumbari </p>
-            </div>
-            <div class="menu-item">
-              <h4 class="menu__item-title">CHICKEN LUWOMBO</h4>
-              <span class="menu__item-price">29,000 Ugx</span>
-              <p class="menu__item-desc">Local free-range chicken slightly char-grilled and steamed in banana leaf with onion, tomato & salt </p>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-4">
-            <img src="static/images/menu/2.jpg" alt="menu" class="mb-40">
-            <div class="menu-item">
-              <h4 class="menu__item-title">CHICKEN ROAST</h4>
-              <span class="menu__item-price">25,000 Ugx </span>
-              <p class="menu__item-desc">Charcoal grilled and served with kachumbari (Tomato & Onion Salad) and a roast matooke </p>
-            </div>
-            <div class="menu-item">
-              <h4 class="menu__item-title">BEEF LUWOMBO</h4>
-              <span class="menu__item-price">28,000 Ugx</span>
-              <p class="menu__item-desc">Slightly char-grilled, then steamed to perfection in a banana leaf with onion & Tomato </p>
-            </div>
-            <div class="menu-item">
-              <h4 class="menu__item-title">BEEF IN G.NUT LUWOMBO</h4>
-              <span class="menu__item-price">29,000 Ugx</span>
-              <p class="menu__item-desc">Freshly char-grilled beef, then mixed with ground(pea)nut paste and steamed in banana leaf </p>
-            </div>
-            
-          </div>
+
+        <!-- ========================
+          MAIN DISHES
+        =========================== -->
+        <div class="menu-layout2 pb-60">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="menu-wrapper">
+                  <div class="menu-item">
+                    <!--<div class="menu__item-img"><img src="static/images/menu/1.jpg" alt="menu img"></div>-->
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">GOAT LUWOMBO</h4>
+                      <p class="menu__item-desc">Steamed in banana leaf with onion, tomato and salt</p>
+                      <span class="menu__item-price">30,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">GOAT STEW</h4>
+                      <span class="pricing__tag">Recommended</span>
+                      <p class="menu__item-desc">Delicately stewed with onion, tomato and salt</p>
+                      <span class="menu__item-price">30,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">ROAST GOAT</h4>
+                      <p class="menu__item-desc">Tender, carefully char-grilled goat's meat, served with a roast Tooke and Kachumbari</p>
+                      <span class="menu__item-price">25,000 Ugx</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="menu-wrapper">
+                <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">CHICKEN LUWOMBO</h4>
+                      <p class="menu__item-desc">Local free-range chicken slightly char-grilled and steamed in banana leaf with onion, tomato & salt</p>
+                      <span class="menu__item-price">29,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">CHICKEN STEW</h4>
+                      <p class="menu__item-desc">Local free-range chicken stewed to perfection with tomato & onion</p>
+                      <span class="menu__item-price">28,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">CHICKEN ROAST</h4>
+                      <p class="menu__item-desc">Charcoal grilled and served with kachumbari (Tomato & Onion Salad) and a roast matooke</p>
+                      <span class="menu__item-price">25,000 Ugx</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
-          <div class="col-sm-12 col-md-12 col-lg-4">
-            <img src="static/images/menu/3.jpg" alt="menu" class="mb-40">
-            <div class="menu-item">
-              <h4 class="menu__item-title">PASTED MEAT</h4>
-              <span class="menu__item-price">27,000 Ugx</span>
-              <p class="menu__item-desc">Smoke dried beef mixed with ground nut & sesame seed paste </p>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="menu-wrapper">
+                <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">BEEF LUWOMBO</h4>
+                      <p class="menu__item-desc">Slightly char-grilled, then steamed to perfection in a banana leaf with onion & Tomato</p>
+                      <span class="menu__item-price">28,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">BEEF IN G.NUT LUWOMBO</h4>
+                      <p class="menu__item-desc">Freshly char-grilled beef, then mixed with ground (pea) nut pasteand steamed in banana leat</p>
+                      <span class="menu__item-price">29,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">PASTED MEAT</h4>
+                      <p class="menu__item-desc">Smoke dried beef mixed with ground nut & sesame seed paste</p>
+                      <span class="menu__item-price">27,000 Ugx</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="menu-wrapper">
+                <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">SMOKED CAT FISH (EMMALE) LUWOMBO</h4>
+                      <span class="pricing__tag">THE ROOTS SPECIAL</span>
+                      <p class="menu__item-desc">Scientifically smoked, steamed in banana leaf and served with pumpkin and vegetables</p>
+                      <span class="menu__item-price">49,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">SSEMUTUNDU LUWOMBO</h4>
+                      <p class="menu__item-desc">Smoke dried Catfish Steamed in banana leaf</p>
+                      <span class="menu__item-price">35,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">FISH IN G.NUT LUWOMBO </h4>
+                      <p class="menu__item-desc">Smoke dried Nile Perch fillet mixed with ground nut sauce & steamed in banana lea</p>
+                      <span class="menu__item-price">33,000 Ugx</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="menu-wrapper">
+                <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">WHOLE TILAPIA</h4>
+                      <span class="pricing__tag">THE ROOTS SPECIAL</span>
+                      <p class="menu__item-desc">Charcoal grilled Tilapia served with Posh (corn bread) kacumbari as well as a tomato-based sauce</p>
+                      <span class="menu__item-price">40,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">STEAMED FISH STEW</h4>
+                      <p class="menu__item-desc">Tilapia Fresh fish stew</p>
+                      <span class="menu__item-price">32,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">MUSHROOM IN GROUND NUT SAUCE</h4>
+                      <p class="menu__item-desc">Nutritious local mushroom mixed into ground (pea)nut paste and steamed to perfection (Ebinyeebwa mu butiko obubaala)</p>
+                      <span class="menu__item-price">25,000 Ugx</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="menu-wrapper">
+                <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">FRESH COW PEAS</h4>
+                      <p class="menu__item-desc">Delictely stewed to taste</p>
+                      <span class="menu__item-price">24,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">BOO</h4>
+                      <p class="menu__item-desc">A blend of Ügandan green leaves cooked in sesame and peanut sauce</p>
+                      <span class="menu__item-price">22,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">FRESH BEANS</h4>
+                      <p class="menu__item-desc">Stewed freshly harvested beans with onion, bitter tomato and salt.</p>
+                      <span class="menu__item-price">20,000 Ugx</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
-            <div class="menu-item">
-              <h4 class="menu__item-title">CHICKEN STEW</h4>
-              <span class="menu__item-price">28,000 Ugx</span>
-              <p class="menu__item-desc">Local free-range chicken stewed to perfection with tomato & onion </p>
-            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+
+    <!-- ========================
+       CONTINENTAL DISHES
+    =========================== -->
+    <section class="text-banner text-banner-layout2 text-center bg-overlay bg-overlay-gradient bg-parallax" id="continental">
+      <div class="bg-img"><img src="static/images/backgrounds/6.jpg" alt="background"></div>
+      <div class="divider-shape"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <span class="banner__subtitle"></span>
+            <h2 class="banner__title">CONTINENTAL DISHES</h2>
           </div>
         </div>
       </div>
     </section>
 
-   
+    <!-- ========================
+        MAIN  DISHES
+    =========================== -->
+
+    <section class="menu-layout1 pt-120 pb-80">
+      <div class="container">
+
+        <!-- ========================
+          CONTINENTAL DISHES
+        =========================== -->
+        <div class="menu-layout2 pb-60">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="menu-wrapper">
+                  <div class="menu-item">
+                    <!--<div class="menu__item-img"><img src="static/images/menu/1.jpg" alt="menu img"></div>-->
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">BEEF STEAK</h4>
+                      <p class="menu__item-desc">Organic fresh cut from sirloin or rib eye with steamed vegetables</p>
+                      <span class="menu__item-price">39,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">BEEF STIR FRY</h4>
+                      <p class="menu__item-desc">Pan fried beef strips with fresh seasonal vegetables and a delicious honey, soy and sesame oil sauce</p>
+                      <span class="menu__item-price">42,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">BEEF STROGANOFF</h4>
+                      <p class="menu__item-desc">Golden pan-seared beef, served with seasonal vegetables</p>
+                      <span class="menu__item-price">41,000 Ugx</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="menu-wrapper">
+                <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">CHICKEN STROGANOFF</h4>
+                      <p class="menu__item-desc">Golden skinless chicken breasts smothered in full flavoured stronganoff</p>
+                      <span class="menu__item-price">41,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">CHICKEN WINGS</h4>
+                      <p class="menu__item-desc">Gilled and served with delicioüs dipping sauce</p>
+                      <span class="menu__item-price">30,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">FISH FINGERS</h4>
+                      <p class="menu__item-desc">Good old fish fingers served with tarter sauce</p>
+                      <span class="menu__item-price">37,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">FISH FILLET</h4>
+                      <p class="menu__item-desc">Seasoned with spices and golden pan tried</p>
+                      <span class="menu__item-price">42,000 Ugx</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+
 
     <!-- ========================
-       DRINKS MENU
+       OTHERS / SALADS
     =========================== -->
-    <section class="text-banner text-banner-layout2 text-center bg-overlay bg-overlay-gradient bg-parallax" id="drinks">
-      <div class="bg-img"><img src="static/images/backgrounds/7.jpg" alt="background"></div>
+    <section class="text-banner text-banner-layout2 text-center bg-overlay bg-overlay-gradient bg-parallax" id="others">
+      <div class="bg-img"><img src="static/images/backgrounds/6.jpg" alt="background"></div>
       <div class="divider-shape"></div>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-12 col-lg-12">
-            <span class="banner__subtitle">Don’t Miss</span>
-            <h2 class="banner__title">Drinks Menu</h2>
+            <span class="banner__subtitle"></span>
+            <h2 class="banner__title">Others / Salads</h2>
           </div>
         </div>
       </div>
-    </section><!-- /.textBanner layout1 -->
+    </section>
 
     <!-- ========================
-        Menu layout 
+        OTHERS / SALADS
     =========================== -->
-    <!--<section id="menulayout1" class="menu-layout1 pb-80">
+
+    <section class="menu-layout1 pt-120 pb-80">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="menu-item">
-              <h4 class="menu__item-title">Drinks Set</h4>
-              <span class="menu__item-price">$20.95</span>
-              <p class="menu__item-desc">Croissants with strawberries, mascarpone, honey.</p>
-            </div>
-            <div class="menu-item">
-              <h4 class="menu__item-title">Healthy Breakfast</h4>
-              <span class="menu__item-price">$18.95</span>
-              <p class="menu__item-desc">Oat granola with fresh blueberries, yogurt.</p>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="menu-item">
-              <h4 class="menu__item-title">Chicken Crispy</h4>
-              <span class="menu__item-price">$33.95</span>
-              <p class="menu__item-desc">Smoked quail, crispy egg, spelt, girolles, parsley.</p>
-            </div>
-            <div class="menu-item">
-              <h4 class="menu__item-title">Grilled Fillet</h4>
-              <span class="menu__item-price">$26.95</span>
-              <p class="menu__item-desc">Pork fillet, ginger, garlic, honey & canola oil.</p>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-4">
-            <div class="menu-item">
-              <h4 class="menu__item-title">Cannoli with cream cheese</h4>
-              <span class="menu__item-price">$15.95</span>
-              <p class="menu__item-desc">Cheese, eggs, strawberries, butter & maple </p>
-            </div>
-            <div class="menu-item">
-              <h4 class="menu__item-title">Chocolate Cherry Cake</h4>
-              <span class="menu__item-price">$9.95</span>
-              <p class="menu__item-desc">Vanilla, milk, dark chocolate, cherries</p>
+
+        <!-- ========================
+          OTHERS / SALADS
+        =========================== -->
+        <div class="menu-layout2 pb-60">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="menu-wrapper">
+                  <div class="menu-item">
+                    <!--<div class="menu__item-img"><img src="static/images/menu/1.jpg" alt="menu img"></div>-->
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">PILAO</h4>
+                      <p class="menu__item-desc"></p>
+                      <span class="menu__item-price">25,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">PLAIN CHIPS</h4>
+                      <p class="menu__item-desc"></p>
+                      <span class="menu__item-price">15,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">ROLEX</h4>
+                      <p class="menu__item-desc">Spanish omelette wrapped in a chapati</p>
+                      <span class="menu__item-price">10,000 Ugx</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="menu-wrapper">
+                <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">FRIED PLANTAIN(GONJA)</h4>
+                      <p class="menu__item-desc"></p>
+                      <span class="menu__item-price">10,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">CHICKEN SALAD</h4>
+                      <p class="menu__item-desc">Roast chicken strips, lettuce, tomato, cucumber & avocado served with a vinaigrette</p>
+                      <span class="menu__item-price">25,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">KACHUMBARI</h4>
+                      <p class="menu__item-desc">Tomato, onion and dressing</p>
+                      <span class="menu__item-price">15,000 Ugx</span>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <div class="menu__item-content">
+                      <h4 class="menu__item-title">GARDEN SALAD</h4>
+                      <p class="menu__item-desc">Lettuce, tomato, carrot, cucumber with a vinaigrette</p>
+                      <span class="menu__item-price">20,000 Ugx</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+
+
             </div>
           </div>
         </div>
+        
       </div>
-    </section>--><!-- /.menu layout 1 -->
+    </section>
+    
 
   <!-- Include Footer -->
   <?php include_once( "footer.php"); ?>

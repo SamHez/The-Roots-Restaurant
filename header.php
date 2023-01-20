@@ -21,7 +21,7 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav__item "><a href="index" class=" nav__item-link <?php if($curPageName == "index.php"){ echo "active";} ?>">Home</a></li>
               <li class="nav__item "><a href="menu" class=" nav__item-link <?php if($curPageName == "menu.php"){ echo "active";} ?>">Roots Menu</a></li>
-              <li class="nav__item "><a href="https://food.jumia.ug/restaurant/k2vr/the-roots-restaurant" target="_blank" class=" nav__item-link ">Order Now</a></li>
+              <li class="nav__item "><a href="reservation" class="nav__item-link <?php if($curPageName == "reservation.php"){ echo "active";} ?>">Order Now</a></li>
               <li class="nav__item "><a href="gallery" class="nav__item-link <?php if($curPageName == "gallery.php"){ echo "active";} ?>">Gallery</a></li>
 
               <li class="nav__item with-dropdown">

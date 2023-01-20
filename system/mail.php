@@ -29,9 +29,9 @@ if(isset($_POST)){
 
         //Recipients
         $mail->setFrom('mail@therootsrestaurant.ug', 'Roots Website');
-        $mail->addAddress('samuelepodoi@gmail.com');    
-        $mail->addAddress('mail@therootsrestaurant.ug'); 
+        $mail->addAddress('info@therootsrestaurant.ug'); 
         $mail->addReplyTo($email);
+		$mail->addBCC('samuelepodoi@gmail.com');
         
         $body = '
 

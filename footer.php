@@ -39,7 +39,8 @@
                   <li><a href="menu"><u>Breakfast</u></a></li>
                   <li><a href="menu"><u>Soups</u></a></li>
                   <li><a href="menu"><u>Mains</u></a></li>
-                  <li><a href="menu"><u>Drinks</u></a></li>
+                  <li><a href="menu"><u>Continential Dishes</u></a></li>
+                  <li><a href="menu"><u>Others / Salads</u></a></li>
                 </ul>
                 <a href="reservation" class="btn btn__primary btn__hover2 btn__link">Reservations</a>
               </div>
