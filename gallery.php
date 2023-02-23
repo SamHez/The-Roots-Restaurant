@@ -25,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Meta SEO Tags -->
 <meta content="" name="generator">
 <meta content="The Roots Restaurant serves the most authentic Ugandan Cuisine in a serene uptown environment and prepared with care to avoid any unnatural additives, ensuring your great health. Here you will find dishes from most parts of Uganda including the signature Luwombo from Buganda, the famous BOO from Acholi, and Filinda as you have never experienced it before, to mention but a few!" name="description">
-<meta content=">Best local food restaurant in uptown Kampla, Luwombo, Matooke, Kalo, Garden, Roast Chicken, Roast Goat, Ugandan food, Eat out, Katogo, Healthy food, Boiled food, Fresh fruit juice, Smoked whole fish, Roots Restaurant, Kampala, Uganda, Nakasero, Food, Localfood, The Roots Restaurant, Good food, The Roots Restaurant, Nice Food,uptown,tasty" name="keywords">
+<meta content=">Best local food restaurant in uptown Kampala, Luwombo, Matooke, Kalo, Garden, Roast Chicken, Roast Goat, Ugandan food, Eat out, Katogo, Healthy food, Boiled food, Fresh fruit juice, Smoked whole fish, Roots Restaurant, Kampala, Uganda, Nakasero, Food, Localfood, The Roots Restaurant, Good food, The Roots Restaurant, Nice Food,uptown,tasty" name="keywords">
 <!-- Meta SEO Tags -->
 
 
@@ -126,6 +126,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               </div>
               <div class="portfolio__hover">
                 <a href="static/images/gallery/3.jpg" data-lightbox="lightbox" class="zoom__icon"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item #1 -->
+        <div class="row filtered-items-wrap">
+          <div class="col-sm-6 col-md-6 col-lg-4 mix filter-gardens">
+            <div class="portfolio-item">
+              <div class="portfolio__img">
+                <img src="static/images/gallery/7.jpg" alt="gallery img">
+              </div>
+              <div class="portfolio__hover">
+                <a href="static/images/gallery/7.jpg" data-lightbox="lightbox" class="zoom__icon"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item #2 -->
+          <div class="col-sm-6 col-md-6 col-lg-4 filter-gardens">
+            <div class="portfolio-item">
+              <div class="portfolio__img">
+                <img src="static/images/gallery/8.jpg" alt="gallery img">
+              </div>
+              <div class="portfolio__hover">
+                <a href="static/images/gallery/8.jpg" data-lightbox="lightbox" class="zoom__icon"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item #3 -->
+          <div class="col-sm-6 col-md-6 col-lg-4  filter-restaurant">
+            <div class="portfolio-item">
+              <div class="portfolio__img">
+                <img src="static/images/gallery/9.jpg" alt="gallery img">
+              </div>
+              <div class="portfolio__hover">
+                <a href="static/images/gallery/9.jpg" data-lightbox="lightbox" class="zoom__icon"></a>
               </div>
             </div>
           </div>

@@ -82,7 +82,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
         <div class="slide-item align-v-h text-center bg-overlay">
-          <div class="bg-img"><img src="static/images/backgrounds/main.jpg" alt="slide img"></div>
+          <div class="bg-img"><img src="static/images/backgrounds/main-3.jpg" alt="slide img"></div>
           <div class="spikes"></div><!-- divider-shape -->
           <div class="container">
             <div class="row">

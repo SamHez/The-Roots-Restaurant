@@ -24,7 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Meta SEO Tags -->
 <meta content="" name="generator">
 <meta content="Our meals are prepared with care to avoid any unnatural additives, ensuring your great health." name="description">
-<meta content=">Best local food restaurant in uptown Kampla, Luwombo, Matooke, Kalo, Garden, Roast Chicken, Roast Goat, Ugandan food, Eat out, Katogo, Healthy food, Boiled food, Fresh fruit juice, Smoked whole fish, Roots Restaurant, Kampala, Uganda, Nakasero, Food, Localfood, The Roots Restaurant, Good food, The Roots Restaurant, Nice Food,uptown,tasty" name="keywords">
+<meta content=">Best local food restaurant in uptown Kampala, Luwombo, Matooke, Kalo, Garden, Roast Chicken, Roast Goat, Ugandan food, Eat out, Katogo, Healthy food, Boiled food, Fresh fruit juice, Smoked whole fish, Roots Restaurant, Kampala, Uganda, Nakasero, Food, Localfood, The Roots Restaurant, Good food, The Roots Restaurant, Nice Food,uptown,tasty" name="keywords">
 <!-- Meta SEO Tags -->
 
 
@@ -54,7 +54,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        Page Title
     =========================== -->
     <section class="page-title page-title-layout4 text-center bg-overlay bg-parallax">
-      <div class="bg-img"><img src="static/images/backgrounds/main.jpg" alt="background"></div>
+      <div class="bg-img"><img src="static/images/backgrounds/5.jpg" alt="background"></div>
       <div class="divider-shape"></div>
       <div class="container">
         <div class="row">
@@ -252,7 +252,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        SOUPS MENU
     =========================== -->
     <section class="text-banner text-banner-layout2 text-center bg-overlay bg-overlay-gradient bg-parallax" id="soups">
-      <div class="bg-img"><img src="static/images/backgrounds/20.jpg" alt="background"></div>
+      <div class="bg-img"><img src="static/images/backgrounds/23.jpg" alt="background"></div>
       <div class="divider-shape"></div>
       <div class="container">
         <div class="row">
@@ -515,7 +515,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        CONTINENTAL DISHES
     =========================== -->
     <section class="text-banner text-banner-layout2 text-center bg-overlay bg-overlay-gradient bg-parallax" id="continental">
-      <div class="bg-img"><img src="static/images/backgrounds/6.jpg" alt="background"></div>
+      <div class="bg-img"><img src="static/images/backgrounds/7.jpg" alt="background"></div>
       <div class="divider-shape"></div>
       <div class="container">
         <div class="row">
@@ -614,7 +614,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        OTHERS / SALADS
     =========================== -->
     <section class="text-banner text-banner-layout2 text-center bg-overlay bg-overlay-gradient bg-parallax" id="others">
-      <div class="bg-img"><img src="static/images/backgrounds/6.jpg" alt="background"></div>
+      <div class="bg-img"><img src="static/images/backgrounds/4.jpg" alt="background"></div>
       <div class="divider-shape"></div>
       <div class="container">
         <div class="row">
